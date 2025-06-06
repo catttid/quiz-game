@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>问答游戏</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- 开始页面 -->
+    <div class="screen active" id="start-screen">
+      <h1>测试时间</h1>
+      <p>用这些有趣的问题测试你的知识</p>
+      <button id="start-btn">开始</button>
+    </div>
+    <!-- 答题页面 -->
+    <div class="screen" id="quiz-screen">
+      <div class="quiz-header">
+        <h2 id="question-text">问题放在这里</h2>
+        <div class="quiz-info">
+          <p>第<span id="current-question">0</span>题 (共<span id="total-questions">0</span>题)</p>
+          <p>分数: <span id="score">0</span> </p>
+        </div>
+      </div>
+      <div id="answers-container" class="answers-container">
+        <!-- 答案按钮将通过js代码添加-->
+      </div>
+      <div class="progress-bar">
+        <div id="progress" class="progress"></div>
+      </div>
+    </div>
+    <!-- 结果页面 -->
+    <div id="result-screen" class="screen">
+      <h1>测验结果</h1>
+      <div class="result-info">
+        <p>您的得分为 <span id="final-score">0</span> 分（满分 <span id="max-score">5</span> 分）</p>
+        <div id="result-message">Good job</div>
+      </div>
+      <button id="restart-btn">重新测验</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
